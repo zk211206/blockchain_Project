@@ -61,5 +61,26 @@ $ ./gradlew build
 
 ## 运行
 
-具体指令可参考实验报告测试部分
+具体指令：
+
+```
+# 部署合约
+$ bash asset_run.sh deploy
+# 创建公司
+$ bash asset_run.sh createCompany "name" "address" "category" totalMoney
+# 创建账单
+$ bash asset_run.sh createReceipt "nameA" "nameB" money "status"
+# 转让账款
+$ bash asset_run.sh transferReceipt "nameA" "nameB" money
+# 向银行融资
+$ bash asset_run.sh borrowFromBank "name" money
+# 应收账款结算
+$ bash asset_run.sh endReceipt "nameA" "nameB"
+# 获取总金额
+$ bash asset_run.sh totalMoney "name"
+# 获取借款金额
+$ bash asset_run.sh fromReceipt "name"
+# 获取被借款金额
+$ bash asset_run.sh toReceipt "name"
+```
 
